@@ -19,7 +19,8 @@
     "dev": "nodemon --inspect=0.0.0.0 dist/example.js",
     "postversion": "git push && git push --tags",
     "test": "jest -i",
-    "lint": "tslint --project ."
+    "lint": "tslint --project .",
+    "postinstall": "tsc --outDir ./build"
   },
   "devDependencies": {
     "@types/express": "4.17.0",
